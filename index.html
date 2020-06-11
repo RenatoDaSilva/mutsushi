@@ -1,47 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mutsushi</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/vue"></script>
-</head>
-<body>
-<div id="app" class="panel panel-default">
-  <div class="panel-heading" style="position: sticky; top: 0;">
-    <span v-html="headerMessage"></span>
-  </div>
-  <div class="panel-body" style="padding:0;border:0px;height:450px;overflow-y:auto">
-	<span v-html="bodyMessage"></span>
-  </div>
-  <div class="panel-footer" style="position: sticky;bottom: 0;height:50px">
-	<span v-html="footerMessage"></span>
-  </div>
-</div>
+	<head>
+		<title>Mutsushi</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://unpkg.com/vue"></script>
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+	</head>
+	<body>
+		<div id="app" class="panel panel-default">
+			<header-message></header-message>
+			<body-message></body-message>
+			<footer-message></footer-message>
+		</div>
 
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-		headerMessage: '<img src="./images/logo.jpg" style="display: block; margin-left: auto; margin-right: auto;max-width: 400px;width: 100%;">',
-		bodyMessage: `<h1 style="color: #5e9ca0; text-align: center;"><strong>Nosso portal est&aacute; sendo preparado</strong></h1>
-		<h2 style="color: #2e6c80; text-align: center;">Em breve voc&ecirc; ter&aacute; maravilhosas novidades, aguarde.</h2>',
-        <img src="./images/sushi-gif.gif" style="display: block; margin-left: auto; margin-right: auto;max-width: 500px;width: 100%;">`,
-		footerMessage: `<div class="table-responsive">
-  <table class="table">
-    <tbody>
-      <tr>
-        <td><a href="https://www.instagram.com/mutsushidelivery/?hl=pt-br"><img class="img-responsive" src="./images/insta_conta.png" alt="Instagram" style="float:right;width:300px"></a></td>
-        <td><a href="https://api.whatsapp.com/send?phone=5548996761473&text=Oii+estou+vindo+do+Site+&#128513;"><img class="img-responsive" src="./images/wpp_numero.png" alt="WhatsApp" style="float:left;width:300px"></a></td>
-      </tr>
-    </tbody>
-  </table>
-  </div>`
-     }
-    })
-  </script>
-</body>
+		<script src="index.js"></script>
+	</body>
 </html>
