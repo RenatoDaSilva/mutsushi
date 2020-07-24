@@ -13,7 +13,7 @@ export default {
   name: "App",
   components: {
     HeaderMessage,
-    BodyMessage
-  }
+    BodyMessage,
+  },
 };
 </script>

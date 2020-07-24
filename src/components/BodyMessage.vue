@@ -1,12 +1,10 @@
 <template>
   <div class="panel-body">
-    <vue-flux
-      :options="vfOptions"
-      :images="vfImages"
-      :transitions="vfTransitions"
-      :captions="vfCaptions"
-      ref="slider"
-    >
+    <vue-flux 
+      :options="vfOptions" 
+      :images="vfImages" 
+      :transitions="vfTransitions" 
+      ref="slider">
       <template v-slot:preloader>
         <flux-preloader />
       </template>
@@ -24,7 +22,7 @@
 
 <script>
 import { VueFlux, FluxControls, FluxPagination, FluxPreloader } from "vue-flux";
-import slides from "../../slides.json";
+import Lista from "../services/listaImg";
 
 export default {
   name: "BodyMessage",
@@ -32,16 +30,23 @@ export default {
     VueFlux,
     FluxControls,
     FluxPagination,
-    FluxPreloader
+    FluxPreloader,
   },
-
-  data: () => ({
-    vfOptions: {
-      autoplay: true
-    },
-    vfImages: slides,
-    vfTransitions: ["slide"]
-  })
+  data() {
+    return {
+      vfOptions: {
+        autoplay: true,
+      },
+      vfImages: [],
+      vfTransitions: ["slide"],
+    };
+  },
+  mounted() {
+    Lista.listar().then((res) => {
+      console.log(res.data);
+      this.vfImages = res.data;
+    });
+  },
 };
 </script>
 

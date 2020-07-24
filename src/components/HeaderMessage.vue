@@ -4,14 +4,14 @@
     <table class="table-heading">
       <tr>
         <td>
-          <a href="https://www.instagram.com/mutsushidelivery/?hl=pt-br">
+           <a href="https://www.instagram.com/mutsushidelivery/?hl=pt-br">
             <img class="img-responsive" src="../assets/insta_conta.png" alt="Instagram" />
           </a>
         </td>
       </tr>
       <tr>
         <td>
-          <a
+           <a
             href="https://api.whatsapp.com/send?phone=5548996761473&text=Oii+estou+vindo+do+Site+&#128513;"
           >
             <img class="img-responsive" src="../assets/wpp_numero.png" alt="WhatsApp" />
@@ -35,10 +35,11 @@ export default {
 }
 
 .table-heading {
-  display: inline;
+  display: inline-table;
   margin-left: auto;
   margin-right: auto;
   align-content: center;
+  width: 50%;
 }
 
 .logo-heading {
@@ -50,14 +51,14 @@ export default {
 
 .img-responsive {
   float: left;
-  width: 80%;
+  width: 60%;
   max-height: 80px;
 }
 
 @media screen and (max-width: 800px) {
   .img-responsive {
     float: center;
-    width: 100%;
+    width: 50%;
     max-height: 80px;
   }
   .logo-heading {
@@ -67,7 +68,7 @@ export default {
     height: 100%;
   }
   .table-heading {
-    width: 100%;
+    width: 190%;
   }
 }
 </style>
