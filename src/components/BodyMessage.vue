@@ -1,35 +1,61 @@
 <template>
   <div class="panel-body">
-    <h1 style="color: #5e9ca0; text-align: center;">
-      <strong>Nosso portal est&aacute; sendo preparado</strong>
-    </h1>
-    <h2
-      style="color: #2e6c80; text-align: center;"
-    >Em breve voc&ecirc; ter&aacute; maravilhosas novidades, aguarde.</h2>
-    <img class="sushi-gif" src="../assets/sushi-gif.gif" />
+    <vue-flux 
+      :options="vfOptions" 
+      :images="vfImages" 
+      :transitions="vfTransitions" 
+      ref="slider">
+      <template v-slot:preloader>
+        <flux-preloader />
+      </template>
+
+      <template v-slot:controls>
+        <flux-controls />
+      </template>
+
+      <template v-slot:pagination>
+        <flux-pagination />
+      </template>
+    </vue-flux>
   </div>
 </template>
 
 <script>
+import { VueFlux, FluxControls, FluxPagination, FluxPreloader } from "vue-flux";
+import Lista from "../services/listaImg";
+
 export default {
-  name: "BodyMessage"
+  name: "BodyMessage",
+  components: {
+    VueFlux,
+    FluxControls,
+    FluxPagination,
+    FluxPreloader,
+  },
+  data() {
+    return {
+      vfOptions: {
+        autoplay: true,
+      },
+      vfImages: [],
+      vfTransitions: ["slide"],
+    };
+  },
+  mounted() {
+    Lista.listar().then((res) => {
+      console.log(res.data);
+      this.vfImages = res.data;
+    });
+  },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.panel-body {
-  padding: 0;
-  border: 0px;
-  height: 450px;
-  overflow-y: auto;
-}
-
-.sushi-gif {
+<style>
+.vue-flux {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
-  width: 100%;
+  max-height: 400px;
+  max-width: 800px;
 }
 </style>

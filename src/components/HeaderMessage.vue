@@ -10,7 +10,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .panel-heading {
   position: sticky;
@@ -21,7 +20,26 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 400px;
-  width: 100%;
+  width: 50%;
+}
+
+.img-responsive {
+  float: center;
+  width: 60%;
+  max-height: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  .img-responsive {
+    float: center;
+    width: 50%;
+    max-height: 80px;
+  }
+  .logo-heading {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
