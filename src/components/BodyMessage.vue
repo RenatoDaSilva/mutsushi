@@ -44,7 +44,7 @@ export default {
   mounted() {
     Lista.listar().then((res) => {
       console.log(res.data);
-      this.vfImages = res.data;
+      this.vfImages = res.data.carousel;
     });
   },
 };
