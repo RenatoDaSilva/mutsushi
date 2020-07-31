@@ -1,10 +1,6 @@
 <template>
-  <div class="panel-body">
-    <vue-flux 
-      :options="vfOptions" 
-      :images="vfImages" 
-      :transitions="vfTransitions" 
-      ref="slider">
+  <div>
+    <vue-flux :options="vfOptions" :images="vfImages" :transitions="vfTransitions" ref="slider">
       <template v-slot:preloader>
         <flux-preloader />
       </template>
@@ -22,7 +18,7 @@
 
 <script>
 import { VueFlux, FluxControls, FluxPagination, FluxPreloader } from "vue-flux";
-import Lista from "../services/listaImg";
+import List from "../services/listaImg";
 
 export default {
   name: "BodyMessage",
@@ -42,7 +38,7 @@ export default {
     };
   },
   mounted() {
-    Lista.listar().then((res) => {
+    List.getList().then((res) => {
       console.log(res.data);
       this.vfImages = res.data.carousel;
     });
@@ -55,7 +51,5 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-height: 400px;
-  max-width: 800px;
 }
 </style>
