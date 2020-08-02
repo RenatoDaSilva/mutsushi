@@ -24,20 +24,19 @@ export default {
   transition: 0.5s ease;
   clip: rect(0px, 500px, 100px, 420px);
 }
-
 .instagram:hover {
   clip: rect(0px, 500px, 100px, 0px);
 }
+
 @media screen and (max-width: 800px) {
   .instagram {
     width: 100%;
     height: auto;
-    clip: rect(auto, auto, auto, auto);
+    clip: rect(0px, 500px, 100px, 335px);
     left: 0%;
   }
-
   .instagram:hover {
-    clip: rect(auto, auto, auto, auto);
+    clip: rect(0px, 500px, 100px, 335px);
   }
 }
 </style>

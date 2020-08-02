@@ -36,12 +36,11 @@ export default {
   .whatsapp {
     width: 100%;
     height: auto;
-    clip: rect(auto, auto, auto, auto);
+    clip: rect(0px, 500px, 100px, 335px);
     left: 1%;
   }
-
   .whatsapp:hover {
-    clip: rect(auto, auto, auto, auto);
+    clip: rect(0px, 500px, 100px, 335px);
   }
 }
 </style>
