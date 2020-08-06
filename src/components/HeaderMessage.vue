@@ -12,20 +12,20 @@ export default {
 
 <style scoped>
 img {
-  position: fixed;
+  position: absolute;
   top: 10px;
-  left: 58%;
+  left: 68%;
   padding: 10px;
   z-index: 10000000;
-  width: 50%;
+  width: 30%;
   height: auto;
-  clip: rect(0px, 600px, 120px, 420px);
+  /* clip: rect(0px, 600px, 120px, 420px); */
 }
 
-img:hover {
+/* img:hover {
   clip: rect(0px, 600px, 180px, 0px);
 }
-
+ */
 
 @media screen and (max-width: 800px) {
   img {
