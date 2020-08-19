@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <BodyMessage />
-    <Cards />
     <HeaderMessage />
     <InstagramButton />
-    <WhatsAppButton />
+    <WhatsAppButtonTijucas />
+    <WhatsAppButtonCanelinha />
+    <Cards />
   </div>
 </template>
 
@@ -12,7 +13,8 @@
 import HeaderMessage from "./components/HeaderMessage.vue";
 import BodyMessage from "./components/BodyMessage.vue";
 import Cards from "./components/Cards.vue";
-import WhatsAppButton from "./components/WhatsAppButton.vue";
+import WhatsAppButtonTijucas from "./components/WhatsAppButtonTijucas.vue";
+import WhatsAppButtonCanelinha from "./components/WhatsAppButtonCanelinha.vue";
 import InstagramButton from "./components/InstagramButton.vue";
 
 export default {
@@ -22,7 +24,8 @@ export default {
     BodyMessage,
     Cards,
     InstagramButton,
-    WhatsAppButton,
+    WhatsAppButtonTijucas,
+    WhatsAppButtonCanelinha,
   },
 };
 </script>
