@@ -30,10 +30,6 @@ img {
 @media screen and (max-width: 800px) {
   img {
     visibility: hidden;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-    height: 100%;
   }
 }
 </style>
