@@ -4,21 +4,21 @@
       href="https://api.whatsapp.com/send?phone=5548996761473&text=Oii+estou+vindo+do+Site+&#128513;"
       target="_blank"
     >
-      <img class="whatsapp" src="../assets/wpp_numero_logo.png" />
+      <img class="whatsappCanelinha" src="../assets/wpp_numero_logo_canelinha.png" />
     </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: "WhatsAppButton",
+  name: "WhatsAppButtonCanelinha",
 };
 </script>
 
 <style>
-.whatsapp {
+.whatsappCanelinha {
   position: fixed;
-  top: 80%;
+  top: 66%;
   left: 62%;
   padding: 10px;
   z-index: 10000000;
@@ -28,18 +28,19 @@ export default {
   clip: rect(0px, 500px, 100px, 400px);
 }
 
-.whatsapp:hover {
+.whatsappCanelinha:hover {
   clip: rect(0px, 500px, 100px, 0px);
 }
 
 @media screen and (max-width: 800px) {
-  .whatsapp {
-    width: 100%;
+  .whatsappCanelinha {
+    position: relative;
+    width: 80%;
     height: auto;
     clip: rect(0px, 500px, 100px, 335px);
-    left: 1%;
+    left: 10%;
   }
-  .whatsapp:hover {
+  .whatsappCanelinha:hover {
     clip: rect(0px, 500px, 100px, 335px);
   }
 }
