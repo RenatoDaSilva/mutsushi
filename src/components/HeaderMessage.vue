@@ -1,41 +1,35 @@
 <template>
-  <div class="panel-heading">
-    <img class="logo-heading" src="../assets/logo.jpg" />
+  <div>
+    <img class="logo-heading" src="../assets/logo.png" />
   </div>
 </template>
 
 <script>
 export default {
-  name: "HeaderMessage"
+  name: "HeaderMessage",
 };
 </script>
 
 <style scoped>
-.panel-heading {
-  position: sticky;
-  top: 0;
+img {
+  position: absolute;
+  top: 10px;
+  left: 68%;
+  padding: 10px;
+  z-index: 10000000;
+  width: 30%;
+  height: auto;
+  /* clip: rect(0px, 600px, 120px, 420px); */
 }
 
-.logo-heading {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+/* img:hover {
+  clip: rect(0px, 600px, 180px, 0px);
 }
-
-.img-responsive {
-  float: center;
-  width: 60%;
-  max-height: 60px;
-}
+ */
 
 @media screen and (max-width: 800px) {
-  .img-responsive {
-    float: center;
-    width: 50%;
-    max-height: 80px;
-  }
-  .logo-heading {
+  img {
+    visibility: hidden;
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;

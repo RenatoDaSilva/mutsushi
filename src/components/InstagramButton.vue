@@ -1,15 +1,14 @@
 <template>
   <div>
     <a href="https://www.instagram.com/mutsushidelivery/?hl=pt-br" target="_blank">
-       <img class="instagram" src="../assets/insta_conta_logo.png" />
+      <img class="instagram" src="../assets/insta_conta_logo.png" />
     </a>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: "InstagramButton"
+  name: "InstagramButton",
 };
 </script>
 
@@ -23,22 +22,21 @@ export default {
   width: 500px;
   height: 88px;
   transition: 0.5s ease;
-  clip: rect(0px,500px,100px,420px);
+  clip: rect(0px, 500px, 100px, 420px);
+}
+.instagram:hover {
+  clip: rect(0px, 500px, 100px, 0px);
 }
 
-.instagram:hover {
-  clip: rect(0px,500px,100px,0px);
-}
 @media screen and (max-width: 800px) {
   .instagram {
     width: 100%;
     height: auto;
-    clip: rect(auto, auto, auto, auto);
+    clip: rect(0px, 500px, 100px, 335px);
     left: 0%;
   }
-
   .instagram:hover {
-    clip: rect(auto, auto, auto, auto);
+    clip: rect(0px, 500px, 100px, 335px);
   }
 }
 </style>
