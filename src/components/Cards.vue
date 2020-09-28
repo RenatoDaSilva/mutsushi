@@ -77,7 +77,6 @@ p {
   .card {
     padding-right: auto;
     padding-left: auto;
-    text-align: center;
 }
 }
 </style>
