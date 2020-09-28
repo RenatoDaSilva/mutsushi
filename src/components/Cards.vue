@@ -46,6 +46,7 @@ img {
   padding-top: 25px;
   padding-left: 10%;
   border-bottom-style: solid;
+  text-align: justify;
 }
 
 p {
@@ -69,10 +70,14 @@ p {
     float: center;
     width: 100%;
     height: auto;
-  }
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
   .card {
     padding-right: auto;
     padding-left: auto;
-  }
+    text-align: center;
+}
 }
 </style>
