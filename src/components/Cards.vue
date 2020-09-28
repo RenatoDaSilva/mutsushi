@@ -72,12 +72,11 @@ p {
     height: auto;
     padding-left: 0px;
     padding-right: 0px;
-}
+  }
 
   .card {
     padding-right: auto;
     padding-left: auto;
-    text-align: center;
-}
+  }
 }
 </style>
