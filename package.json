@@ -12,7 +12,7 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",
-    "vue-flux": "^6.2.1",
+    "vue-flux": "^6.3.0",
     "vue-template-compiler": "^2.6.11"
   },
   "devDependencies": {
@@ -42,5 +42,17 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Mutsushi delivery's Site ``` https://mutsushi.com.br",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenatoDaSilva/mutsushi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenatoDaSilva/mutsushi/issues"
+  },
+  "homepage": "https://github.com/RenatoDaSilva/mutsushi#readme"
 }
