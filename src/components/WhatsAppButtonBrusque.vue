@@ -4,21 +4,21 @@
       href="https://api.whatsapp.com/send?phone=5548998402077&text=Oii+estou+vindo+do+Site+&#128513;"
       target="_blank"
     >
-      <img class="whatsappTijucas" src="../assets/wpp_numero_logo_tijucas.png" />
+      <img class="whatsappBrusque" src="../assets/wpp_numero_logo_brusque.png" />
     </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: "WhatsAppButtonTijucas",
+  name: "WhatsAppButtonBrusque",
 };
 </script>
 
 <style>
-.whatsappTijucas {
+.whatsappBrusque {
   position: fixed;
-  top: 66%;
+  top: 80%;
   left: 62%;
   padding: 10px;
   z-index: 10000000;
@@ -28,19 +28,19 @@ export default {
   clip: rect(0px, 500px, 100px, 400px);
 }
 
-.whatsappTijucas:hover {
+.whatsappBrusque:hover {
   clip: rect(0px, 500px, 100px, 0px);
 }
 
 @media screen and (max-width: 800px) {
-  .whatsappTijucas {
+  .whatsappBrusque {
     position: relative;
     width: 80%;
     height: auto;
     clip: rect(0px, 500px, 100px, 335px);
     left: 10%;
   }
-  .whatsappTijucas:hover {
+  .whatsappBrusque:hover {
     clip: rect(0px, 500px, 100px, 335px);
   }
 }

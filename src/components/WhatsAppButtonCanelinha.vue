@@ -18,7 +18,7 @@ export default {
 <style>
 .whatsappCanelinha {
   position: fixed;
-  top: 66%;
+  top: 52%;
   left: 62%;
   padding: 10px;
   z-index: 10000000;

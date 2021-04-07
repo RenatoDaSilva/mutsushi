@@ -15,7 +15,7 @@ export default {
 <style>
 .instagram {
   position: fixed;
-  top: 52%;
+  top: 38%;
   left: 61.3%;
   padding: 10px;
   z-index: 10000000;

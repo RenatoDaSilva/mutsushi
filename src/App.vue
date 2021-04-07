@@ -5,6 +5,7 @@
     <InstagramButton />
     <WhatsAppButtonTijucas />
     <WhatsAppButtonCanelinha />
+    <WhatsAppButtonBrusque />
     <Cards />
   </div>
 </template>
@@ -16,6 +17,7 @@ import Cards from "./components/Cards.vue";
 import WhatsAppButtonTijucas from "./components/WhatsAppButtonTijucas.vue";
 import WhatsAppButtonCanelinha from "./components/WhatsAppButtonCanelinha.vue";
 import InstagramButton from "./components/InstagramButton.vue";
+import WhatsAppButtonBrusque from "./components/WhatsAppButtonBrusque.vue";
 
 export default {
   name: "App",
@@ -26,6 +28,7 @@ export default {
     InstagramButton,
     WhatsAppButtonTijucas,
     WhatsAppButtonCanelinha,
+    WhatsAppButtonBrusque,
   },
 };
 </script>
